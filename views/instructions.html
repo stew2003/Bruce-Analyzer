@@ -1,0 +1,25 @@
+<!Doctype html>
+
+    <head>
+        <title>Bruce Analytics</title>
+        <!-- Include JQuery: -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Include CSSS -->
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+    <body>
+        <div id="header">
+            <img id = "leftHeaderPic" src = "Album Cover.png"/>
+            <img id = "rightHeaderPic" src = "Album Cover.png"/>
+            <h1>Bruce Analyzer</h1>
+             <div id="tabs">
+                <button class="tabs", onclick="window.location.href='/words'">Top Words</button>
+                <button class="tabs", onclick="window.location.href='/home'">Home</button>
+                <button class="tabs", onclick="window.location.href='/instructions'">Instructions</button>
+            </div>
+        </div>
+        <div id="center">
+        	<p id="instructions">Hello, and thank you for visiting www.bruceanalyze.me. To use this website first you need to go to the home page. Once you are there, you will see a large textbox. You can use this textbox to search for specific words or phrases in Bruce Springsteen's lyrics. On the left of the textbox there is a dropdown menu with three different modes: "specific", "general", and "song". If you choose "specific", the algorithm will only search for the exact word or phrase you type in. If you choose "general" then the algoritm will search for words with the same root i.e. If you type search for the word run, the algorithm will include words like runs, running, ran, etc. The last mode, "song" will give you the lyrics to a song that you search. I hope you enjoy the website! </p>
+        </div>
+    </body>

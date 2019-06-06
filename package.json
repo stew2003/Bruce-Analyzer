@@ -1,0 +1,19 @@
+{
+  "name": "bruce-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Stewart Morris",
+  "license": "ISC",
+  "dependencies": {
+    "any-db": "^2.2.1",
+    "any-db-sqlite3": "^2.1.4",
+    "express": "^4.16.3",
+    "mustache-express": "^1.2.7",
+    "porter-stemmer": "^0.9.1"
+  }
+}

@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+
+	<head>
+		<title>Top Bruce Words</title>
+		<link rel="icon" href="Album Cover.png"/>
+		<!-- Include JQuery: -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Include CSS: -->
+ 		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+		<div id="header">
+			<img id = "leftHeaderPic" src = "Album Cover.png"/>
+			<img id = "rightHeaderPic" src = "Album Cover.png"/>
+			<h1>Top Words</h1>
+			<div id="tabs">
+                		<button class="tabs", onclick="window.location.href='/words'">Top Words</button>
+                		<button class="tabs", onclick="window.location.href='/home'">Home</button>
+                		<button class="tabs", onclick="window.location.href='/instructions'">Instructions</button>
+           		</div>
+		</div>
+		<div id="topWords">
+			<ol>
+				{{#top}}
+					<li> {{word}}: {{amountUsed}}
+				{{/top}}
+			</ol> 
+		</div>
+		<!-- Main.js is "lazy loaded" after all other elements have loaded: -->
+		<script src="main.js"></script>
+	</body>
+
+</html>

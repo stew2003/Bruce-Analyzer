@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+
+    <head>
+        <title>Bruce Analytics</title>
+        <!-- Include JQuery: -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Include Graph Maker -->
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+        <!-- Include CSS: -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+    </head>
+
+    <body>
+        <div id="header">
+            <img id = "leftHeaderPic" src = "Album Cover.png"/>
+            <img id = "rightHeaderPic" src = "Album Cover.png"/>
+            <h1>Bruce Analyzer</h1>
+	    <div id="tabs">
+	    	<button class="tabs", onclick="window.location.href='/words'">Top Words</button>
+            	<button class="tabs", onclick="window.location.href='/home'">Home</button>
+            	<button class="tabs", onclick="window.location.href='/instructions'">Instructions</button>
+	    </div>
+        </div>
+        <div id="keyDiv">
+            <select id= "type">
+                <option value = "General">General</option>
+                <option value = "Specific">Specific</option>
+                <option value = "Song">Song</option>
+            </select>
+            <input type="text" id="keyword" placeholder="Keyword..."/>
+            <button id="search", type="submit">Submit</button>
+        </div>
+        <p id = "lyrics"></p>
+        <div id="yearChartContainer" style="height: 300px; width: 100%; display:none;"></div>
+        <div id="albumChartContainer" style="height: 300px; width: 100%; display:none;"></div>
+        <ol id="topTen"></ol>
+        <!-- Main.js is "lazy loaded" after all other elements have loaded: -->
+        <script src="main.js"></script>
+    </body>
+
+</html>
